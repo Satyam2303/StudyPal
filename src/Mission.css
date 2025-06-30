@@ -1,0 +1,73 @@
+/* //src/Mission.css */
+.mission-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.mission-statement {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.mission-statement h2 {
+  font-size: 2.2rem;
+}
+
+.mission-statement p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.mission-vision {
+  margin-bottom: 3rem;
+}
+
+.mission-vision h3 {
+    font-size: 1.8rem;
+}
+
+.mission-vision ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.mission-vision li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2328a745"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') no-repeat left center;
+  background-size: 1.2rem;
+  padding-left: 2rem;
+}
+
+.mission-delivery h3 {
+    font-size: 1.8rem;
+}
+
+.delivery-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.point {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.point h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #0056b3;
+}

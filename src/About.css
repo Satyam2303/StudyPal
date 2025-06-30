@@ -1,0 +1,69 @@
+/* //src/About.css */
+.about-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.about-section, .founders-section {
+  margin-bottom: 3rem;
+}
+
+.about-page h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-page p {
+  color: #333;
+}
+
+.why-list {
+  list-style: '✔ ';
+  padding-left: 1.5rem;
+}
+
+.why-list li {
+  margin-bottom: 0.5rem;
+}
+
+.founders-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.founder-card {
+  flex-basis: 45%;
+  min-width: 300px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.founder-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.founder-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.founder-card .degree {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
