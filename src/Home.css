@@ -1,13 +1,14 @@
-/* //src/Home.css */
+/* src/Home.css */
 .home-page {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0; /* Changed padding */
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
 
 .home-header {
   margin-bottom: 3rem;
+  padding: 0 2rem; /* Add padding back to text sections */
 }
 
 .home-header h1 {
@@ -20,27 +21,67 @@
   color: #555;
 }
 
+.home-intro {
+  padding: 0 2rem; /* Add padding back to text sections */
+}
+
 .home-intro h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
 .home-intro p {
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
-    line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
 }
 
-.home-images {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+/* The old .home-images class has been removed.
+*/
+
+/* --- New Slider Styles --- */
+.sliders-section {
+  margin-top: 4rem;
 }
 
-.home-images img {
-  max-width: 400px;
+.slider-container {
+  width: 90%;
+  margin: 0 auto 4rem auto; /* Center the container and add space below */
+}
+
+.slider-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.slide {
+  padding: 0 15px; /* Creates gutter space between slides */
+  box-sizing: border-box;
+}
+
+.slide-image {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: 300px; /* Give a fixed height to the images */
+  object-fit: cover; /* This will cover the area, cropping if necessary */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-image:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+/* Customizing the slider dots */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #007bff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #0056b3;
+    opacity: 1;
 }
