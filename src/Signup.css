@@ -1,160 +1,32 @@
+/* //src/Signup.css */
 .signup-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f7f6;
 }
 
-.form-container-custom {
-  max-width: 700px;
-  width: 100%;
-  padding: 2.5rem 3rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0;
+.signup-page h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
-.form-container-custom h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.form-container-custom p {
-  text-align: center;
-  color: #666;
-  margin-bottom: 2.5rem;
-}
-
-.form-group-custom {
-  margin-bottom: 1.75rem;
-}
-
-.form-group-custom > label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: #333;
-  font-size: 0.95rem;
-}
-
-.label-note {
-  font-weight: 400;
-  color: #777;
-  font-style: italic;
-}
-
-.form-group-custom input[type="text"],
-.form-group-custom input[type="email"],
-.form-group-custom input[type="tel"],
-.form-group-custom textarea {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.form-group-custom input:focus,
-.form-group-custom textarea:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
-}
-
-.form-group-custom textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-.radio-group, .checkbox-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.radio-group label, 
-.checkbox-group label {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.radio-group input, 
-.checkbox-group input {
-  margin-right: 0.75rem;
-  cursor: pointer;
-  flex-shrink: 0;
-  width: 1.15em;
-  height: 1.15em;
-}
-
-.other-input-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.other-input {
-  flex-grow: 1;
-  margin-left: 0.25rem;
-}
-
-.agreement-group label {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #555;
-}
-
-.submit-btn-custom {
-  width: 100%;
-  padding: 1rem;
+.signup-page p {
   font-size: 1.1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.signup-form-wrapper {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 8px;
-  cursor: pointer;
-  margin-top: 1rem;
-  transition: background-color 0.3s, transform 0.2s;
+  /* This ensures the iframe respects the rounded corners */
+  overflow: hidden; 
 }
 
-.submit-btn-custom:hover:not(:disabled) {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-}
-
-.submit-btn-custom:disabled {
-  background-color: #aaa;
-  cursor: not-allowed;
-}
-
-.thank-you-message {
-  text-align: center;
-  max-width: 600px;
-  margin: auto;
-}
-
-.thank-you-message h2 {
-  font-size: 2.5rem;
-  color: #28a745;
-}
-
-.error-message {
-  color: #dc3545;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
-  border-radius: 8px;
-  text-align: center;
-  padding: 0.75rem;
-  margin-top: 1rem;
+.signup-form-wrapper iframe {
+  /* This removes any default bottom margin/spacing on the iframe element */
+  display: block; 
 }
