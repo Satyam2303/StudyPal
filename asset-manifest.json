@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/StudyPal/static/css/main.66cdb924.css",
-    "main.js": "/StudyPal/static/js/main.b4998263.js",
+    "main.css": "/StudyPal/static/css/main.4b2b4245.css",
+    "main.js": "/StudyPal/static/js/main.c4ceafc5.js",
     "static/media/dhruv.jpg": "/StudyPal/static/media/dhruv.d70a9bf03d03d803f95d.jpg",
     "static/media/satyam.jpg": "/StudyPal/static/media/satyam.7977c25e19b850bf86c0.jpg",
     "static/media/dashboard.png": "/StudyPal/static/media/dashboard.539a0811d567d8b441d6.png",
@@ -17,11 +17,11 @@
     "static/media/slick.ttf": "/StudyPal/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/StudyPal/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/StudyPal/index.html",
-    "main.66cdb924.css.map": "/StudyPal/static/css/main.66cdb924.css.map",
-    "main.b4998263.js.map": "/StudyPal/static/js/main.b4998263.js.map"
+    "main.4b2b4245.css.map": "/StudyPal/static/css/main.4b2b4245.css.map",
+    "main.c4ceafc5.js.map": "/StudyPal/static/js/main.c4ceafc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.66cdb924.css",
-    "static/js/main.b4998263.js"
+    "static/css/main.4b2b4245.css",
+    "static/js/main.c4ceafc5.js"
   ]
 }
