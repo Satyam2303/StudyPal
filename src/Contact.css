@@ -1,21 +1,62 @@
 /* //src/Contact.css */
-.contact-page {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 8px;
+.contact-page-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
 }
 
-.contact-page h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+.glass-card {
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 8px 32px rgba(37,117,252,0.10);
+  border-radius: 24px;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  max-width: 520px;
+  width: 100%;
+  margin: 2rem auto;
+  position: relative;
+  backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(229,46,113,0.08);
 }
-.contact-page p {
-    margin-bottom: 2rem;
-    color: #555;
+
+.contact-hero {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+.mail-icon {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  animation: floatMail 2.5s ease-in-out infinite alternate;
+}
+@keyframes floatMail {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+.gradient-text {
+  background: linear-gradient(90deg, #e52e71 0%, #2575fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #e52e71;
+  white-space: nowrap;
+  animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 0.7rem;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #e52e71; }
 }
 
 .contact-form {
@@ -29,29 +70,104 @@
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: #2575fc;
 }
-
-.form-group input,
-.form-group textarea {
+.input-icon-group {
+  display: flex;
+  align-items: center;
+  background: rgba(230,240,255,0.45);
+  border-radius: 8px;
+  padding: 0.1rem 0.7rem;
+  box-shadow: 0 2px 8px rgba(37,117,252,0.04);
+  border: 1px solid #e0e7ff;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.input-icon-group:focus-within {
+  box-shadow: 0 4px 16px rgba(229,46,113,0.10);
+  border: 1.5px solid #e52e71;
+}
+.input-icon {
+  margin-right: 0.7rem;
+  display: flex;
+  align-items: center;
+  animation: popIn 0.8s 0.2s cubic-bezier(.23,1.01,.32,1) forwards;
+  opacity: 0.7;
+}
+.input-icon svg {
+  display: block;
+}
+.input-icon-group input,
+.input-icon-group textarea {
   width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.8rem 0.5rem;
+  border: none;
+  background: transparent;
   font-size: 1rem;
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  outline: none;
+  color: #222;
+  border-radius: 8px;
+}
+.input-icon-group textarea {
+  resize: vertical;
 }
 
 .submit-btn {
-  padding: 0.8rem 1.5rem;
-  background-color: #007bff;
-  color: white;
+  padding: 0.9rem 2.2rem;
+  background: linear-gradient(90deg, #e52e71 0%, #2575fc 100%);
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
+  box-shadow: 0 2px 8px rgba(229,46,113,0.10);
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+.submit-btn:hover {
+  background: linear-gradient(90deg, #2575fc 0%, #e52e71 100%);
+  color: #fff;
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px rgba(37,117,252,0.18);
 }
 
-.submit-btn:hover {
-  background-color: #0056b3;
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.slide-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideIn 1.1s 0.2s cubic-bezier(.23,1.01,.32,1) forwards;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.pop-in {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: popIn 0.8s 0.4s cubic-bezier(.23,1.01,.32,1) forwards;
+}
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .glass-card {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .contact-page-bg {
+    padding: 0.5rem 0;
+  }
 }
