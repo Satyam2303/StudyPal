@@ -8,17 +8,56 @@
   line-height: 1.7;
 }
 
+/* Hero Section */
+.mission-hero {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 24px rgba(106,17,203,0.08);
+}
+.gradient-text {
+  background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.hero-subtext {
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Typewriter animation */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #fff;
+  white-space: nowrap;
+  animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff; }
+}
+
 .mission-statement {
   background-color: #f4f4f4;
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 3rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 }
-
 .mission-statement h2 {
   font-size: 2.2rem;
+  color: #2575fc;
 }
-
 .mission-statement p {
   font-size: 1.2rem;
   color: #333;
@@ -27,18 +66,16 @@
 .mission-vision {
   margin-bottom: 3rem;
 }
-
 .mission-vision h3 {
     font-size: 1.8rem;
+    color: #e52e71;
 }
-
 .mission-vision ul {
   list-style: none;
   padding: 0;
   display: inline-block;
   text-align: left;
 }
-
 .mission-vision li {
   margin-bottom: 1rem;
   font-size: 1.1rem;
@@ -49,8 +86,8 @@
 
 .mission-delivery h3 {
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
-
 .delivery-points {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -58,16 +95,88 @@
     text-align: left;
     margin-top: 2rem;
 }
-
 .point {
     background: #fff;
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(37,117,252,0.08);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-
+.point:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(229,46,113,0.12);
+}
+.point-icon {
+    font-size: 2.2rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    opacity: 0.18;
+    pointer-events: none;
+}
 .point h4 {
     margin-top: 0;
     font-size: 1.2rem;
     color: #0056b3;
+    z-index: 1;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.slide-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideIn 1.1s 0.2s cubic-bezier(.23,1.01,.32,1) forwards;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.pop-in {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: popIn 0.8s 0.4s cubic-bezier(.23,1.01,.32,1) forwards;
+}
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* CTA Section */
+.mission-cta {
+  margin-top: 3.5rem;
+  background: linear-gradient(90deg, #e52e71 0%, #ff8a00 100%);
+  color: #fff;
+  padding: 2.2rem 1.5rem 2.5rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(229,46,113,0.08);
+}
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: #fff;
+  color: #e52e71;
+  font-weight: bold;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.cta-btn:hover {
+  background: #e52e71;
+  color: #fff;
+  transform: scale(1.06);
 }
