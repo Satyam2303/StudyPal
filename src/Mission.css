@@ -18,27 +18,30 @@
   box-shadow: 0 4px 24px rgba(106,17,203,0.08);
   position: relative;
 }
-.gradient-text {
-  background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+.gradient-text, .mission-hero h1 {
+  color: #1a237e;
   font-weight: 900;
   font-size: 2.8rem;
-  text-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 1px 0 #fff;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.10), 0 1px 0 #fff;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  text-fill-color: unset;
 }
 .hero-subtext {
   font-size: 1.5rem;
   margin-top: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: #ffe066;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.7), 0 1px 0 #fff;
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  background: rgba(0,0,0,0.18);
+  color: #222;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.13), 0 1px 0 #fff;
+  border-radius: 14px;
+  padding: 0.7em 1.3em;
   display: inline-block;
+  border: 2.5px solid #ff8a00;
+  text-shadow: 0 2px 8px rgba(37,117,252,0.10);
 }
 
 /* Typewriter animation */
