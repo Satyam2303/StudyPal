@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/StudyPal/static/css/main.a70a05ee.css",
+    "main.css": "/StudyPal/static/css/main.4366a44a.css",
     "main.js": "/StudyPal/static/js/main.d1ce27ce.js",
     "static/media/dhruv.jpg": "/StudyPal/static/media/dhruv.d70a9bf03d03d803f95d.jpg",
     "static/media/satyam.jpg": "/StudyPal/static/media/satyam.7977c25e19b850bf86c0.jpg",
@@ -17,11 +17,11 @@
     "static/media/slick.ttf": "/StudyPal/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/StudyPal/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/StudyPal/index.html",
-    "main.a70a05ee.css.map": "/StudyPal/static/css/main.a70a05ee.css.map",
+    "main.4366a44a.css.map": "/StudyPal/static/css/main.4366a44a.css.map",
     "main.d1ce27ce.js.map": "/StudyPal/static/js/main.d1ce27ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.a70a05ee.css",
+    "static/css/main.4366a44a.css",
     "static/js/main.d1ce27ce.js"
   ]
 }
