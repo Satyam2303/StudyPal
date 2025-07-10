@@ -31,7 +31,7 @@ const Contact = () => {
           <span className="mail-icon">
             <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#e52e71" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="4"/><polyline points="22,6 12,13 2,6"/></svg>
           </span>
-          <h2 className="gradient-text">Contact Us</h2>
+          <h2 className="submit-btn pop-int">Contact Us</h2>
           <p className="typewriter">Have a question or want to get in touch? Fill out the form below.</p>
         </div>
         <form className="contact-form slide-in" onSubmit={handleSubmit} autoComplete="off">

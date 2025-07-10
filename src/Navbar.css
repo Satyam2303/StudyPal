@@ -51,3 +51,23 @@
 .nav-links .signup:hover {
   text-decoration: underline;
 }
+
+.signup-highlight {
+  background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+  color: #fff !important;
+  border-radius: 18px;
+  padding: 0.5em 1.3em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(229,46,113,0.13);
+  border: 2px solid #fff;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-left: 0.7em;
+  display: inline-block;
+}
+.signup-highlight:hover {
+  background: linear-gradient(90deg, #e52e71 0%, #ff8a00 100%);
+  color: #fff !important;
+  box-shadow: 0 8px 32px rgba(229,46,113,0.18);
+  text-decoration: none;
+}

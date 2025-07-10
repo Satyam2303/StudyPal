@@ -15,8 +15,8 @@ const Navbar = () => {
         <li><Link to="/contact">Contact</Link></li>
         <li>
           {/* This is now a Link instead of a button */}
-          <Link to="/signup" className="signup">
-            SignUp For Beta Trial
+          <Link to="/signup" className="signup signup-highlight">
+            Sign Up For Public Beta
           </Link>
         </li>
       </ul>

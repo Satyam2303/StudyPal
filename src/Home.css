@@ -140,11 +140,13 @@
   transform: translateY(-50%);
   opacity: 0.92;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  color: #111 !important;
 }
 .custom-arrow:hover {
   background: linear-gradient(120deg, #2575fc 0%, #6a11cb 100%);
   color: #fff;
   box-shadow: 0 4px 16px rgba(37,117,252,0.18);
+  color: #111 !important;
 }
 .left-arrow {
   left: -22px;

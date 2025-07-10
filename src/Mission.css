@@ -44,6 +44,20 @@
   text-shadow: 0 2px 8px rgba(37,117,252,0.10);
 }
 
+/* Our Mission heading */
+.mission-hero h1.gradient-text {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #e52e71 0%, #2575fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0 6px 24px rgba(37,117,252,0.13), 0 2px 0 #fff;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5em;
+}
+
 /* Typewriter animation */
 .typewriter {
   overflow: hidden;
@@ -97,9 +111,18 @@
   padding-left: 2rem;
 }
 
-.mission-delivery h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+/* How We Deliver heading */
+.mission-delivery h3.gradient-text {
+  color: #e52e71;
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-shadow: 0 4px 18px rgba(229,46,113,0.13), 0 1px 0 #fff;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  text-fill-color: unset;
+  margin-bottom: 1.2rem;
 }
 .delivery-points {
     display: grid;
