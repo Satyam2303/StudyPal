@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/StudyPal/static/css/main.f5dd909c.css",
-    "main.js": "/StudyPal/static/js/main.38f8aa4c.js",
+    "main.css": "/StudyPal/static/css/main.db251384.css",
+    "main.js": "/StudyPal/static/js/main.db422278.js",
     "static/media/Material_section.png": "/StudyPal/static/media/Material_section.4922885fac386b73ada4.png",
     "static/media/Self_generated_textbook.png": "/StudyPal/static/media/Self_generated_textbook.91fd29d1d1bf9a92e406.png",
     "static/media/dhruv.jpg": "/StudyPal/static/media/dhruv.d70a9bf03d03d803f95d.jpg",
@@ -21,11 +21,11 @@
     "static/media/slick.ttf": "/StudyPal/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/StudyPal/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/StudyPal/index.html",
-    "main.f5dd909c.css.map": "/StudyPal/static/css/main.f5dd909c.css.map",
-    "main.38f8aa4c.js.map": "/StudyPal/static/js/main.38f8aa4c.js.map"
+    "main.db251384.css.map": "/StudyPal/static/css/main.db251384.css.map",
+    "main.db422278.js.map": "/StudyPal/static/js/main.db422278.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5dd909c.css",
-    "static/js/main.38f8aa4c.js"
+    "static/css/main.db251384.css",
+    "static/js/main.db422278.js"
   ]
 }
