@@ -161,6 +161,7 @@ const Home = () => {
         {/* Slider 1 */}
         <div className="slider-container">
           <h3>Core Dashboard Features</h3>
+          <p className="slider-description">Essential tools for monitoring progress, analyzing performance, and getting instant AI assistance through our intelligent chatbot.</p>
           <Slider {...settings_3_slides}>
             {slider1_images.map((img, index) => (
               <div key={index} className="slide fancy-slide">
@@ -175,6 +176,7 @@ const Home = () => {
         {/* Slider 2 */}
         <div className="slider-container">
           <h3>Advanced Learning Tools</h3>
+          <p className="slider-description">Comprehensive testing, personalized question generation, progress tracking, and AI-powered recommendations for optimal learning.</p>
           <Slider {...settings_4_slides}>
             {slider2_images.map((img, index) => (
               <div key={index} className="slide fancy-slide">
@@ -189,6 +191,7 @@ const Home = () => {
         {/* Slider 3 */}
         <div className="slider-container">
           <h3>Content Generation & Materials</h3>
+          <p className="slider-description">AI-generated textbooks, self-created study materials, and organized content sections tailored to your learning needs.</p>
           <Slider {...settings_3_slides}>
             {slider3_images.map((img, index) => (
               <div key={index} className="slide fancy-slide">
@@ -203,6 +206,7 @@ const Home = () => {
         {/* Slider 4 */}
         <div className="slider-container">
           <h3>AI Teaching & Scheduling</h3>
+          <p className="slider-description">Personalized AI tutoring sessions and intelligent study scheduling to maximize your learning efficiency.</p>
           <Slider {...settings_2_slides}>
             {slider4_images.map((img, index) => (
               <div key={index} className="slide fancy-slide">
