@@ -90,17 +90,19 @@
 
 .slide-image, .fancy-image {
   width: 100%;
-  height: 320px;
-  object-fit: cover;
+  height: 400px;
+  object-fit: contain;
   object-position: center;
   border-radius: 18px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   transition: transform 0.4s cubic-bezier(.23,1.01,.32,1), box-shadow 0.4s;
   position: relative;
   z-index: 2;
+  background: #fff;
+  padding: 10px;
 }
 .fancy-slide:hover .fancy-image {
-  transform: scale(1.07) translateY(-6px) rotate(1deg);
+  transform: scale(1.05) translateY(-4px) rotate(1deg);
   box-shadow: 0 12px 32px rgba(37,117,252,0.18);
 }
 
@@ -170,7 +172,8 @@
 /* Responsive Tweaks */
 @media (max-width: 600px) {
   .slide-image, .fancy-image {
-    height: 180px;
+    height: 250px;
+    padding: 8px;
   }
   .slider-container {
     width: 99%;

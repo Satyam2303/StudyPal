@@ -53,21 +53,35 @@
 }
 
 .signup-highlight {
-  background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
-  color: #fff !important;
-  border-radius: 18px;
-  padding: 0.5em 1.3em;
-  font-size: 1.1rem;
-  font-weight: bold;
-  box-shadow: 0 4px 16px rgba(229,46,113,0.13);
-  border: 2px solid #fff;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  margin-left: 0.7em;
+  background: #ffffff;
+  color: #e52e71 !important;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid #e52e71;
+  transition: all 0.3s ease;
+  margin-left: 1.5em;
   display: inline-block;
-}
-.signup-highlight:hover {
-  background: linear-gradient(90deg, #e52e71 0%, #ff8a00 100%);
-  color: #fff !important;
-  box-shadow: 0 8px 32px rgba(229,46,113,0.18);
   text-decoration: none;
+}
+
+.signup-highlight:hover {
+  background: #f8f9fa;
+  color: #d4145a !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Ensure other nav links don't have the same styling */
+.nav-links a:not(.signup-highlight) {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:not(.signup-highlight):hover {
+  color: #ccc;
 }
