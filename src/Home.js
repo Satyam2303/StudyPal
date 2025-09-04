@@ -139,6 +139,13 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      {/* Ticker Tape */}
+      <div className="ticker-tape">
+        <div className="ticker-content">
+          <span>This is a landing page created to showcase our platform. The full platform with all features is currently in Private Beta.</span>
+        </div>
+      </div>
+      
       <header className="home-header">
         <h1>Welcome to MentrAI</h1>
         <p>
