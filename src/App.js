@@ -16,6 +16,13 @@ function App() {
     <div className="App">
       {/* The onSignupClick prop is no longer needed */}
       <Navbar />
+      
+      {/* Ticker Tape - positioned below navbar */}
+      <div className="ticker-tape">
+        <div className="ticker-content">
+          <span>This is a landing page created to showcase our platform. The full platform with all features is currently in Private Beta.</span>
+        </div>
+      </div>
 
       {/* The pop-up container block has been removed */}
 
