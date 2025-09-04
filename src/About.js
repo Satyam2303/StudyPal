@@ -29,7 +29,7 @@ const About = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section className="about-hero fade-in">
-        <h1 className="gradient-text">About StudyPal</h1>
+        <h1 className="gradient-text">About MentrAI</h1>
         <p className="hero-subtext typewriter">
           Built by students, for students. <br />
           <span className="highlight">Personalized. Powerful. Human.</span>

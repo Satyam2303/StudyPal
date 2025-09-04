@@ -25,7 +25,7 @@ const Mission = () => {
         <h2>Why We Exist</h2>
         <p>
           We're here to build the smartest tutor you'll ever have. One that knows your gaps, your strengths, your style – and helps you succeed. <br/>
-          <strong>StudyPal is your partner in learning, every step of the way.</strong>
+          <strong>MentrAI is your partner in learning, every step of the way.</strong>
         </p>
       </div>
       
@@ -69,7 +69,7 @@ const Mission = () => {
       {/* Call to Action */}
       <div className="mission-cta fade-in">
         <h2>Ready to experience the future of learning?</h2>
-        <a href="/signup" className="cta-btn">Join StudyPal Now</a>
+        <a href="/signup" className="cta-btn">Join MentrAI Now</a>
       </div>
     </div>
   );
