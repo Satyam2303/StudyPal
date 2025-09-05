@@ -142,19 +142,9 @@ const Home = () => {
       <header className="home-header">
         <h1>Welcome to MentrAI</h1>
         <p>
-          The smartest tutor you'll ever have. One that knows your gaps, your
-          strengths, your style - and helps you succeed.
+          MentrAI is an AI-powered learning platform built to transform the way students prepare for exams. Whether it's the SAT, GRE, ACT, or other competitive tests, StudyPal makes studying smarter, faster, and more engaging. Our platform creates personalized textbooks, adaptive learning paths, and gamified lessons that keep students motivated while addressing their individual strengths and weaknesses. Unlike traditional coaching or generic AI tutors, StudyPal doesn't just deliver information — it continuously analyzes progress, identifies knowledge gaps, and generates targeted practice to ensure real understanding. By turning preparation into an interactive and enjoyable experience, we help students learn more effectively, stay engaged, and ultimately achieve better results.
         </p>
       </header>
-
-      <section className="home-intro">
-        <h2>Your Personal AI-Powered Study Partner</h2>
-        <p>
-          MentrAI leverages cutting-edge AI to create a truly personalized
-          learning experience. Stop wasting time on generic content and get the
-          expert-level guidance you need, exactly when you need it.
-        </p>
-      </section>
 
       {/* --- Sliders Section --- */}
       <section className="sliders-section fancy-slider-bg">
