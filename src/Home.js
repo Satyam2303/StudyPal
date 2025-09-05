@@ -27,6 +27,9 @@ import slider3_img3 from './assets/Material_section.png';
 import slider4_img1 from './assets/AI_teacher.png';
 import slider4_img2 from './assets/Schedular.png';
 
+// Logo
+import logoImage from './assets/LogoM.jpg';
+
 // Custom Arrow for Slider
 const CustomArrow = (props) => {
   const { className, style, onClick, direction } = props;
@@ -141,9 +144,16 @@ const Home = () => {
     <div className="home-page">
       <header className="home-header">
         <h1>Welcome to MentrAI</h1>
-        <p>
-          MentrAI is an AI-powered learning platform built to transform the way students prepare for exams. Whether it's the SAT, GRE, ACT, or other competitive tests, StudyPal makes studying smarter, faster, and more engaging. Our platform creates personalized textbooks, adaptive learning paths, and gamified lessons that keep students motivated while addressing their individual strengths and weaknesses. Unlike traditional coaching or generic AI tutors, StudyPal doesn't just deliver information — it continuously analyzes progress, identifies knowledge gaps, and generates targeted practice to ensure real understanding. By turning preparation into an interactive and enjoyable experience, we help students learn more effectively, stay engaged, and ultimately achieve better results.
-        </p>
+        <div className="header-content">
+          <div className="header-text">
+            <p>
+              MentrAI is an AI-powered learning platform built to transform the way students prepare for exams. Whether it's the SAT, GRE, ACT, or other competitive tests, StudyPal makes studying smarter, faster, and more engaging. Our platform creates personalized textbooks, adaptive learning paths, and gamified lessons that keep students motivated while addressing their individual strengths and weaknesses. Unlike traditional coaching or generic AI tutors, StudyPal doesn't just deliver information — it continuously analyzes progress, identifies knowledge gaps, and generates targeted practice to ensure real understanding. By turning preparation into an interactive and enjoyable experience, we help students learn more effectively, stay engaged, and ultimately achieve better results.
+            </p>
+          </div>
+          <div className="header-logo">
+            <img src={logoImage} alt="MentrAI Logo" className="logo-image" />
+          </div>
+        </div>
       </header>
 
       {/* --- Sliders Section --- */}
